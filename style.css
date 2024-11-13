@@ -126,3 +126,29 @@ html, body {
     width: 100vw;
     text-align: center;
 }
+
+:root {
+    --font-size: 2em;
+    --font-size-small: 1em;
+}
+
+@media (max-width: 1500px) {
+    :root {
+        --font-size: 1.5em;
+        --font-size-small: 0.9em;
+    }
+}
+
+@media (max-width: 1100px) {
+    :root {
+        --font-size: 1em;
+        --font-size-small: 0.75em;
+    }
+}
+
+h1 {
+    font-size: var(--font-size);
+}
+p {
+    font-size: var(--font-size-small);
+}
